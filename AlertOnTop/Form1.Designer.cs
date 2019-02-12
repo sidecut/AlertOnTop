@@ -66,6 +66,7 @@
             this.Controls.Add(this.OkButton);
             this.Name = "Form1";
             this.Text = "Alert";
+            this.TopMost = true;
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
