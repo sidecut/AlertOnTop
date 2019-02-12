@@ -22,6 +22,9 @@ namespace AlertOnTop
             p.Setup<string>('m', "message")
                 .Callback(message => textBox1.Text = message)
                 .Required();
+            p.Setup<bool>('t', "topmost")
+                .Callback(topmost => TopMost = topmost)
+                .SetDefault(true);
 
             var args = Environment.GetCommandLineArgs();
             p.Parse(args);
